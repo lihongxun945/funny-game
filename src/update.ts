@@ -1,6 +1,7 @@
 import world from './world';
 
 export default function update(){
+  if (world.gameOver) return false;
   const {player} = world;
   const cursors = this.input.keyboard.createCursorKeys();
   if (cursors.left.isDown) {

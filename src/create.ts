@@ -51,7 +51,7 @@ export default function create() {
 
 
   // 计分
-  world.scoreText = this.add.text(16, 16, `score: ${world.score}`, { fontSize: '32px', fill: 'red' });
+  world.scoreText = this.add.text(16, 16, `score: ${world.score}`, { fontSize: '24px', fill: 'red' });
 
   //炸弹
   const bombs = world.bombs = this.physics.add.group();
@@ -64,6 +64,8 @@ export default function create() {
     player.setTint(0xff0000);
 
     player.anims.play("turn");
+
+    world.gameOver = true;
   }
 
   this.physics.add.collider(player, bombs, hitBomb, null, this);

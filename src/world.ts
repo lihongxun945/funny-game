@@ -1,4 +1,5 @@
 export default {
+  gameOver: false,
   player: undefined,
   stars: undefined,
   score: 0,
