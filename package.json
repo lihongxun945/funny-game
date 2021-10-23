@@ -1,0 +1,24 @@
+{
+  "name": "funny-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack serve",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.0.0",
+    "phaser": "^3.55.2",
+    "webpack": "^5.59.1",
+    "webpack-cli": "^4.9.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack-dev-server": "^4.3.1"
+  }
+}
